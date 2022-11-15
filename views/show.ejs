@@ -1,0 +1,18 @@
+<%- include('partials/header'); -%>
+
+
+        <% if (errMsg !== '') { %>
+            <div class="error">
+                <p>You have an error: <%= errMsg %> </p>
+            </div>
+        <% } else { %> 
+        
+            <h1><%= p.name.charAt(0).toUpperCase() + p.name.slice(1) %></h1>
+
+            <figure>
+                <img src="<%= p.img %>.jpg" />
+            </figure>
+
+        <% } %> 
+
+<%- include('partials/footer'); -%>

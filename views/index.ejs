@@ -1,0 +1,18 @@
+<%- include('partials/header'); -%>
+
+<h1><%= myPageTitle %></h1>
+
+<ul>
+    
+    <% pokemon.forEach(p => { %>
+    
+        <li>
+            <p><%= p.name %></p>
+            <a href="http://localhost:3000/pokemon/<%= p._id %>"><img src="<%= p.img %>.jpg" /></a>
+            </li>
+    
+    <% }) %>
+    
+</ul>
+
+<%- include('partials/footer'); -%>
